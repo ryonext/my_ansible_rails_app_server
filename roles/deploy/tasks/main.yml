@@ -4,3 +4,7 @@
 - name: Deploy private key
   copy: src={{ private_key_path }} dest=~/.ssh/github_id_rsa mode=600
 
+- name: Create directory
+  sudo: yes
+  file: path=/var/www state=directory owner=ec2-user
+
