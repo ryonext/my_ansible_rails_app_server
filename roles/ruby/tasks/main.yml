@@ -1,7 +1,7 @@
 ---
 - name: Install dependencies
   sudo: yes
-  yum: pkg={{item}} state=latest
+  yum: pkg={{item}} state=latest enablerepo=epel
   with_items:
     - git
     - tar
@@ -11,6 +11,8 @@
     - zlib-devel
     - openssl-devel
     - readline-devel
+    - mysql-devel
+    - nodejs
 
 - name: Install rbenv
   git: repo=https://github.com/sstephenson/rbenv.git dest={{ rbenv_root }}
