@@ -59,3 +59,6 @@
 
 - name: "set ruby {{ ruby_version }} for system"
   shell: bash -lc "rbenv global {{ ruby_version }} && rbenv rehash"
+
+- name: Install bundler
+  shell: bash -lc "gem install bundler"
