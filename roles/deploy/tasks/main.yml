@@ -1,0 +1,6 @@
+- name: Set ssh setting for connect to github
+  copy: src=config dest=~/.ssh/config mode=600
+
+- name: Deploy private key
+  copy: src={{ private_key_path }} dest=~/.ssh/github_id_rsa mode=600
+
