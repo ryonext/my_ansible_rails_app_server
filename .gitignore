@@ -1,2 +1,4 @@
 *.retry
 credential/
+environmental_variables.sh
+production
