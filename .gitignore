@@ -2,3 +2,5 @@
 credential/
 environmental_variables.sh
 production
+github_id_rsa
+roles/deploy/files/environmental_variable.sh
