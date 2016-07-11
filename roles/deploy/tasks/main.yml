@@ -10,4 +10,4 @@
 
 - name: Set env file for application data
   sudo: yes
-  copy: src=environmental_variable.sh dest=/etc/profile.d mode=0775
+  copy: src=environmental_variables.sh dest=/etc/profile.d mode=0775
