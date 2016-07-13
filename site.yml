@@ -2,6 +2,7 @@
   roles:
     - deploy
     - ruby
+    - web
   vars:
     - rbenv_root: ~/.rbenv
     - ruby_version: 2.3.1
