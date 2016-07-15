@@ -9,3 +9,7 @@
 - name: start nginx
   command: service nginx restart
   sudo: yes
+
+- name: apply nginx setting.
+  template: src="rails_app.conf" dest="/etc/nginx/conf.d/app.conf"
+  sudo: yes
