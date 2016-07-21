@@ -3,3 +3,4 @@ credential/
 environmental_variables.sh
 production
 github_id_rsa
+roles/web/vars/main.yml
